@@ -47,7 +47,10 @@ namespace NGordat.Ethersecret.Scanner.WinForm.Browser
             browser.RegisterJsObject("dotnetcallback", new BrowserCallbackForJs(this));
 
             toolStripContainer.ContentPanel.Controls.Add(browser);
-
+	    //Skip Javascript Alert.
+            JsDialogHandler jss = new JsDialogHandler();
+            browser.JsDialogHandler = jss;
+	    
             browser.LoadingStateChanged += OnLoadingStateChanged;
             browser.ConsoleMessage += OnBrowserConsoleMessage;
             browser.StatusMessage += OnBrowserStatusMessage;
