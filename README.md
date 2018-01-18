@@ -18,3 +18,10 @@ Additionally, you will need Visual Studio 2013 or higher and .NET 4.5.2 to compi
 # Run
 
 In order to run this application, you will need the VC++ 2013 Runtime (https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+
+
+原始GIT:https://github.com/Land3r/Ethersecret-scanner
+
+加入些微個人修正，使程序不會中斷
+
+碰撞發生的機率非常-非常-非常-非常小，有興趣可以去了解，請愛護地球，節約用電
