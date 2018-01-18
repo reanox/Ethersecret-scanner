@@ -31,6 +31,8 @@
                             
                             if (alreadyRedirected == false) {
                                 setTimeout(parseAmmout, 2000);
+                                //To avoid stop caused by loading.
+                                setTimeout(goToNextPage, 30000);
                             }
                             alreadyRedirected = true;
                             return;
